@@ -26,8 +26,9 @@ set backspace=indent,eol,start	"Backspace behaviour
 
 "Special characters for tabs and spaces
 set list
-set listchars=tab:\|Â ,trail:Â·,nbsp:>,extends:>,precedes:<,eol:Â¶
+"set listchars=tab:\| ,trail:·,nbsp:>,extends:>,precedes:<,eol:¶
 
+set listchars=tab:\| ,trail:·,nbsp:>,extends:>,precedes:<,eol:¶
 
 "Status line below!
 set laststatus=2
