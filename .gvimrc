@@ -1,3 +1,19 @@
+"Adding some of my advanced edits.
+set tm=255
+"For quick esacping, deleting, opening, etc.
+:imap jj <Esc>
+:imap jk <BS>
+:imap kk <Del>
+:imap jjo <Esc>o
+:imap jjO <Esc>O
+
+"Normal Mode
+:nmap j gj
+:nmap k gk
+"For navigating splits.
+:nmap we <C-w>
+:nmap wekk <C-w>k<C-w>k
+
 syntax on
 set number  "Show line numbers
 set linebreak	"Break lines at word (requires Wrap lines)
