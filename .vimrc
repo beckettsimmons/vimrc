@@ -10,9 +10,41 @@ set tm=255
 "Normal Mode
 :nmap j gj
 :nmap k gk
+:nmap ss viws
+:nmap ii a jjr
 "For navigating splits.
 :nmap we <C-w>
 :nmap wekk <C-w>k<C-w>k
+"Quick buffer
+nmap j<space> :b 
+
+
+"For autocompletion
+function! Smart_TabComplete()
+	" current line
+	let line = getline('.')
+	let substr =strpart(line, -1, col('.'))
+	let substr = matchstr(substr, "[^ \t]*$")
+	if (strlen(substr)==0)
+		return "\<tab>"
+	endif
+	let has_period = match(substr, '\.') != -1
+	let has_slash = match(substr, '\/') != -1
+	if (!has_slash)
+		" existing text matching
+		return "\<C-X>\<C-P>"
+	elseif ( has_slash )
+		" file matching
+		return "\<C-X>\<C-F>"
+	else
+		" plugin matching
+		return "\<C-X>\<C-O>"
+	endif
+endfunction
+set completeopt=longest,menuone
+set ignorecase
+set infercase
+inoremap <tab> <c-r>=Smart_TabComplete()<CR>
 
 syntax on
 set number  "Show line numbers
