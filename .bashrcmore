@@ -1,0 +1,8 @@
+# Some nice aliases.
+alias sl="echo $SHLVL"
+alias g="git"
+
+# Vi keyboard bindings.
+set -o vi
+# confirm history selection
+shopt -s histverify
