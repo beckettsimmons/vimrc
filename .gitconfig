@@ -1,0 +1,39 @@
+[user]
+	email = beckettsimmons@hotmail.com
+	name = Beckett Simmons
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+	filemode = false
+
+[alias]
+	lf = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold yellow)%d%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+    lo = log --oneline
+
+	ls = show-branch
+	lss = show-branch --sparse
+
+	co = checkout
+
+	st = status
+	sb = status -sb
+
+	up = add -u
+
+	d = diff
+	ds = diff --stat
+	staged = diff --cached
+#
+	b = branch
+	ba = branch -a
+
+	chp = cherry-pick
+
+
+
+[color]
+	ui = true
+
+[diff]
+	mnemonicprefix = true

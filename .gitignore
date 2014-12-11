@@ -1,0 +1,5 @@
+# Silly swap files.
+*.swp
+*.swo
+
+*.py[co]
