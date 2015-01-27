@@ -14,9 +14,20 @@ set tm=255
 :nmap ii a jjr
 "For navigating splits.
 :nmap we <C-w>
-:nmap wekk <C-w>k<C-w>k
 "Quick buffer
-nmap j<space> :b 
+map j<space> :b 
+"Misc Stuff
+:nmap csf :set foldmethod=indent<CR>:set foldnestmax=2<CR>
+nmap csl :set invrelativenumber<CR>
+nmap oo m'o<Esc>`'
+nmap OO m'O<Esc>`'
+nmap 1h 10h
+nmap 1j 10j
+nmap 1k 10k
+nmap 1l 10l
+"Previos and next buffer
+nmap j<Space>p :bp
+nmap j<Space>n :bn
 
 
 "For autocompletion

@@ -25,6 +25,9 @@ nmap 1h 10h
 nmap 1j 10j
 nmap 1k 10k
 nmap 1l 10l
+"Previos and next buffer
+nmap j<Space>p :bp
+nmap j<Space>n :bn
 
 
 "For autocompletion
