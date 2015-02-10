@@ -29,6 +29,14 @@ nmap 1l 10l
 nmap j<Space>p :bp
 nmap j<Space>n :bn
 
+" Pathogen load
+filetype off
+
+call pathogen#infect()
+call pathogen#helptags()
+
+filetype plugin indent on
+syntax on
 
 "For autocompletion
 function! Smart_TabComplete()
