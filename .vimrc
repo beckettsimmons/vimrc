@@ -19,6 +19,12 @@ map j<space> :b
 "Misc Stuff
 :nmap csf :set foldmethod=indent<CR>:set foldnestmax=2<CR>
 nmap csl :set invrelativenumber<CR>
+nmap css :set invspell<CR>
+nmap csp :set invpaste<CR>
+nmap cstw :set textwidth=
+nmap cstw8 :set textwidth=79<CR>
+nmap cstw0 :set textwidth=0<CR>
+nmap cse :set invexpandtab<CR>
 nmap oo m'o<Esc>`'
 nmap OO m'O<Esc>`'
 nmap 1h 10h
